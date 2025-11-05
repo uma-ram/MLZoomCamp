@@ -5,7 +5,7 @@ FROM agrigorev/zoomcamp-model:2025
 # Copy your FastAPI script
 # Run it with uvicorn
 
-WORKDIR /app
+WORKDIR /code
 
 # Install uv tool
 RUN pip install uv
@@ -16,7 +16,8 @@ COPY "pyproject.toml" "uv.lock" ".python-version" ./
 
 RUN uv sync --locked
 
-COPY "homework.py" "pipeline_v1.bin" ./
+COPY "homework.py"  ./ 
+#"pipeline_v1.bin"
 
 EXPOSE 9696
 

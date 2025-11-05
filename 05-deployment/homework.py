@@ -26,7 +26,8 @@ from typing import Dict, Any
 app = FastAPI(title='Course_Prediction')
 
 
-filename ='pipeline_v1.bin'
+# filename ='pipeline_v1.bin'  # this is my bin file
+filename ='pipeline_v2.bin'  # this is alex bin file which is downloaded as dockerimage
 with open(filename,'rb') as f_in:
     pipeline = pickle.load(f_in)
 
