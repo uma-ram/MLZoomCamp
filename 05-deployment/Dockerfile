@@ -17,7 +17,8 @@ COPY "pyproject.toml" "uv.lock" ".python-version" ./
 RUN uv sync --locked
 
 COPY "homework.py"  ./ 
-#"pipeline_v1.bin"
+#"pipeline_v1.bin" Here pipeline_v2 is used from downloaded dockerfile. if i have to use my pipe
+#line, the include this pipeline_v1 in COPY along with py file
 
 EXPOSE 9696
 
