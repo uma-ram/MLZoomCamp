@@ -1,14 +1,3 @@
-conda create -n ml-zoomcamp python=3.11
-pip install numpy pandas scikit-learn seaborn jupyter matplotlib
-pip install uv
-# create an empty project---> uv init
-uv pip install Scikit-Learn==1.6.1 pandas
-uc add Scikit-Learn==1.6.1
-#uv lock
-
-pip install fastapi uvicorn
-
-# my own refeerence
 pip install fastapi uvicorn
 
 def webservice and create endpoint
