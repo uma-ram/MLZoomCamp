@@ -10,6 +10,7 @@ pip install fastapi uvicorn
 
 # my own refeerence
 pip install fastapi uvicorn
+pip install XGBoost
 
 def webservice and create endpoint
 use to call webservice in terminal(in windows):  'curl http://localhost:9696/ping'
